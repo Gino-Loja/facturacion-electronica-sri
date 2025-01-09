@@ -1,0 +1,13 @@
+*.p12
+envSignXml
+.env
+*.xml
+.vscode
+__pycache__
+0201202501229033008700110010010000050359384414911.xml
+firma.xml
+example.xml
+example copy.json
+example.json
+example-test.json
+/env

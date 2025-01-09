@@ -1,0 +1,184 @@
+{
+    "campoAdicional": [
+      {
+        "nombre": "string",
+        "value": "string"
+      }
+    ],
+    "detalle": [
+      {
+        "cantidad": 0,
+        "codigoAuxiliar": "string",
+        "codigoPrincipal": "string",
+        "descripcion": "string",
+        "descuento": 0,
+        "detAdicional": [
+          {
+            "nombre": "string",
+            "valor": "string"
+          }
+        ],
+        "impuesto": [
+          {
+            "baseImponible": 0,
+            "codDocSustento": "string",
+            "codigo": "string",
+            "codigoPorcentaje": "string",
+            "codigoRetencion": "string",
+            "fechaEmisionDocSustento": "string",
+            "numDocSustento": "string",
+            "porcentajeRetener": 0,
+            "tarifa": 0,
+            "valor": 0,
+            "valorRetenido": 0
+          }
+        ],
+        "precioSinSubsidio": 0,
+        "precioTotalSinImpuesto": 0,
+        "precioUnitario": 0,
+        "unidadMedida": "string"
+      }
+    ],
+    "id": "string",
+    "infoFactura": {
+      "codDocReembolso": "string",
+      "comercioExterior": "string",
+      "compensacion": [
+        {
+          "codigo": "string",
+          "tarifa": 0,
+          "valor": 0
+        }
+      ],
+      "contribuyenteEspecial": "string",
+      "dirEstablecimiento": "string",
+      "direccionComprador": "string",
+      "fechaEmision": "string",
+      "fleteInternacional": 0,
+      "gastosAduaneros": 0,
+      "gastosTransporteOtros": 0,
+      "guiaRemision": "string",
+      "identificacionComprador": "string",
+      "importeTotal": 0,
+      "incoTermFactura": "string",
+      "incoTermTotalSinImpuestos": "string",
+      "lugarIncoTerm": "string",
+      "moneda": "string",
+      "obligadoContabilidad": "string",
+      "pagos": [
+        {
+          "formaPago": "string",
+          "plazo": "string",
+          "total": 0,
+          "unidadTiempo": "string"
+        }
+      ],
+      "paisAdquisicion": "string",
+      "paisDestino": "string",
+      "paisOrigen": "string",
+      "placa": "string",
+      "propina": 0,
+      "puertoDestino": "string",
+      "puertoEmbarque": "string",
+      "razonSocialComprador": "string",
+      "seguroInternacional": 0,
+      "tipoIdentificacionComprador": "string",
+      "totalBaseImponibleReembolso": 0,
+      "totalComprobantesReembolso": 0,
+      "totalDescuento": 0,
+      "totalImpuesto": [
+        {
+          "baseImponible": 0,
+          "codigo": "string",
+          "codigoPorcentaje": "string",
+          "descuentoAdicional": 0,
+          "tarifa": "string",
+          "valor": 0,
+          "valorDevolucionIva": 0
+        }
+      ],
+      "totalImpuestoReembolso": 0,
+      "totalSinImpuestos": 0,
+      "totalSubsidio": 0,
+      "valorRetIva": 0,
+      "valorRetRenta": 0
+    },
+    "infoSustitutivaGuiaRemision": {
+      "destino": [
+        {
+          "codEstabDestino": "string",
+          "docAduaneroUnico": "string",
+          "motivoTraslado": "string",
+          "ruta": "string"
+        }
+      ],
+      "dirDestinatario": "string",
+      "dirPartida": "string",
+      "fechaFinTransporte": "string",
+      "fechaIniTransporte": "string",
+      "placa": "string",
+      "razonSocialTransportista": "string",
+      "rucTransportista": "string",
+      "tipoIdentificacionTransportista": "string"
+    },
+    "infoTributaria": {
+      "ambiente": "string",
+      "codDoc": "string",
+      "dirMatriz": "string",
+      "estab": "string",
+      "nombreComercial": "string",
+      "ptoEmi": "string",
+      "razonSocial": "string",
+      "ruc": "string",
+      "secuencial": "string",
+      "tipoEmision": "string"
+    },
+    "reembolsoDetalle": [
+      {
+        "codDocReembolso": "string",
+        "codPaisPagoProveedorReembolso": "string",
+        "compensacionReembolso": [
+          {
+            "codigo": "string",
+            "tarifa": 0,
+            "valor": 0
+          }
+        ],
+        "detalleImpuesto": [
+          {
+            "baseImponibleReembolso": 0,
+            "codigo": "string",
+            "codigoPorcentaje": "string",
+            "impuestoReembolso": 0,
+            "tarifa": "string"
+          }
+        ],
+        "estabDocReembolso": "string",
+        "fechaEmisionDocReembolso": "string",
+        "identificacionProveedorReembolso": "string",
+        "numeroAutorizacionDocReemb": "string",
+        "ptoEmiDocReembolso": "string",
+        "secuencialDocReembolso": "string",
+        "tipoIdentificacionProveedorReembolso": "string",
+        "tipoProveedorReembolso": "string"
+      }
+    ],
+    "retencion": [
+      {
+        "codigo": "string",
+        "codigoPorcentaje": "string",
+        "tarifa": 0,
+        "valor": 0
+      }
+    ],
+    "rubro": [
+      {
+        "concepto": "string",
+        "total": 0
+      }
+    ],
+    "tipoNegociable": {
+      "correo": "string"
+    },
+    "version": "string"
+  }
