@@ -54,7 +54,7 @@ async def sign_invoice(request: Request, invoice: Invoice, usuario_id: int):
         # print("1==",xmlNoSigned.name)
         # print("2==",xmlSigned.name)
         # get digital signature
-        cursor.execute("SELECT certificado, password, fecha_caducidad FROM certificado_digital")
+        cursor.execute("SELECT certificado, contrasena, fecha_caducidad FROM certificado_digital")
         result = cursor.fetchone()
         
         #  date of expiration
@@ -91,7 +91,7 @@ async def sign_invoice(request: Request, invoice: Invoice, usuario_id: int):
         path_to_certificate = createTempFile(certificado_decode_base64, certificateName)
             
         # password of signature
-        passwordP12 = config['PASSWORD']
+        passwordP12 = result[1]
         infoToSignXml = InfoToSignXml(
             pathXmlToSign=xmlNoSigned.name,
             pathXmlSigned=xmlSigned.name,

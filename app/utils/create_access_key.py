@@ -16,11 +16,14 @@ def createAccessKey(documentInfo: DocumentInfo, randomNumber: int):
     typeEmission = ''.join(documentInfo.typeEmission)
 
     # combination of data
+    
+  
     preAccessKey = dateEmission + codDoc + rucBusiness + environment + \
         establishment + emissionPoint + sequential + randomNumber + typeEmission
     # print(len(preAccessKey))
     checkDigit = CheckDigit()
     checkerDigit = str(checkDigit.compute_mod11(preAccessKey))
+    
     # print(checkerDigit)
     # validate when the digit is 10
     if int(checkerDigit) == 10:
@@ -30,6 +33,7 @@ def createAccessKey(documentInfo: DocumentInfo, randomNumber: int):
 
     # join preAccessKey with checkerDigit
     accessKey = preAccessKey + checkerDigit
+    
 
     # return accessKey combination
     return accessKey

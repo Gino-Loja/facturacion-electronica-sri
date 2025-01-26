@@ -37,6 +37,7 @@ def createXml(info: Invoice, accessKeyInvoice: str):
     ) + '/' + str(
         info.documentInfo.yearEmission)
     
+    
     nsmap = {
             "ds": "http://www.w3.org/2000/09/xmldsig#",
             "xsi": "http://www.w3.org/2001/XMLSchema-instance",

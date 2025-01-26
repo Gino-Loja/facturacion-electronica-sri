@@ -47,7 +47,7 @@ def save_xml_database(comprobante: str,
         
         try:
             insert_query = """
-            INSERT INTO facturas (usuario_id, fecha_emision, estado, clave_acceso, xml_firmado, numero_factura, factura_json)
+            INSERT INTO facturas_detalles (usuario_id, fecha_emision, estado, clave_acceso, xml_firmado, numero_factura, factura_json)
             VALUES (%s, %s, %s, %s, %s, %s, %s)
             """
             
