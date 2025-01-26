@@ -78,6 +78,8 @@ async def sign_invoice(request: Request, invoice: Invoice, usuario_id: int):
         
         
         certificateName = 'signature.p12'
+        print(f"Certificado: ")
+        
         
         pathSignature = os.path.abspath('app/signature.p12')
 
